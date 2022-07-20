@@ -1,8 +1,9 @@
-
 @import url(./fonts.css);
+
 * {
     box-sizing: border-box;
 }
+
 .text {
     text-align: center;
     font-size: 40px;
@@ -47,42 +48,44 @@
 }
 
 .footer {
-    max-width: 1440px;
+    margin: 0 auto;
+    padding: 120px 104px;
     height: 630px;
     background-color: #10367C;
-    margin: auto;
+
+}
+
+.foot-description {
     display: flex;
-    padding: 120px 104px;
-    flex-wrap: wrap;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1232px;
+    margin: 0 auto 44px;
+
+}
+
+.foot-inform {
+    width: 33.3%;
+}
 
 .footer-text {
     font-family: Roboto, sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: #FFFFFF;
+    line-height: 1.4;
     margin-top: 0;
-    margin-bottom: 24px;
 }
 
-.property-types {
-    height: 133px;
-    margin-left: 225px;
-    margin-right: 285px;
-    margin-bottom: 64px;
-}
-
-.about {
-    height: 211px;
-    margin-bottom: 163px;
-}
-
-.end{
+.colontitul {
+    display: flex;
+    justify-content: start;
+    width: 1232px;
     font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #FFFFFF;
-    margin: 0;
+    margin: 0 auto auto;
 }
 
 
