@@ -1,0 +1,175 @@
+@import url(./fonts.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+.background-image {
+    background: url("../images/back/castelmezzano-1979546 1.svg") no-repeat;
+    background-size: 100%;
+    min-height: 100%;
+    height: 900px;
+    object-fit: revert;
+    margin: 0 auto;
+    padding: 51px 142px 0 142px;
+
+}
+
+.header {
+    display: flex;
+    height: 46px;
+    width: 1223px;
+    justify-content: space-between;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 332px;
+}
+
+.header-icon {
+    height: 40px;
+    width: 205px;
+}
+
+.header-text {
+    margin-top: 8px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.orange {
+    background: url("../images/favicons/Line 1.png");
+    height: 3px;
+    width: 50px;
+    margin-top: 12px;
+
+
+}
+
+.header-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94px;
+
+}
+
+.night {
+    background: url("../images/favicons/Night.png");
+    height: 30px;
+    width: 30px;
+}
+
+.account {
+    background: url("../images/favicons/AccountCircle.png");
+    height: 40px;
+    width: 40px;
+
+}
+
+
+.h1-text {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #ffffff;
+    margin-top: 202px;
+    margin-bottom: 100px;
+    width: 542px;
+}
+
+.form-search {
+    display: flex;
+    width: 1223px;
+    margin-top: 20px;
+    height: 64px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+fieldset {
+    border: 0 none;
+    padding: 0;
+}
+
+.legend {
+    display: flex;
+    width: 650px;
+    margin-left: 24px;
+    color: #ffffff;
+    justify-content: space-between;
+
+}
+
+.legend-text {
+    font-family: Roboto, sans-serif;
+    font-size: 21px;
+}
+
+.input {
+    height: 64px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.city {
+    width: 467px;
+}
+
+.date {
+    width: 259px;
+    border: 3px solid #f5bd41;
+    text-align: center;
+}
+
+.person {
+    width: 314px;
+}
+
+.submit {
+    background-color: #10367C;
+    width: 192px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+::placeholder {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    padding-left: 24px;
+
+}
+
+
+.apps {
+    display: flex;
+    width: 270px;
+    justify-content: space-between;
+    margin: 120px auto 120px 481px;
+
+}
+
+.google {
+    background-image: url("../images/favicons/google-play-badge.png");
+    height: 40px;
+    width: 135px;
+
+}
+
+.apple {
+    background-image: url("../images/favicons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917 1.png");
+    height: 40px;
+    width: 120px;
+}
