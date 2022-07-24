@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main-brunch</title>
+    <link rel="stylesheet" href="./styles/main-styles.css" />
+  </head>
+  <body>
+    <div class="background-image">
+      <div class="header">
+        <svg class="header__logo">
+          <use href="./images/sprite.svg#logo" />
+        </svg>
+        <div class="header__container">
+          <div class="header__text--underlined">
+            <div class="header__text">
+              <p class="header__text--name">Stays</p>
+              <p class="header__text--name">Attractions</p>
+            </div>
+            <svg class="header__text--line">
+              <use href="./images/sprite.svg#orange" />
+            </svg>
+          </div>
+
+          <div class="header__images">
+            <svg class="header__images--night">
+              <use href="./images/sprite.svg#night" />
+            </svg>
+            <svg class="header__images--account">
+              <use href="./images/sprite.svg#account" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="h1-text">
+        Discover stays <br />
+        to live, work or just relax
+      </h1>
+
+      <form class="form">
+        <fieldset class="form__fieldset">
+          <legend>
+            <span class="form__legend">
+              <span>Your destination hotel name</span>
+              <span>Check in - Check out</span>
+            </span>
+          </legend>
+
+          <div class="form__search">
+            <label for="city">
+              <input
+                class="form__search form__search--city"
+                type="text"
+                id="city"
+                name="city"
+                placeholder="New-York"
+            /></label>
+            <label for="date">
+              <input
+                class="form__search form__search--date"
+                type="text"
+                id="date"
+                placeholder="Tue 15 Sept - Sat 19 Sept"
+              />
+            </label>
+            <label for="person">
+              <input
+                class="form__search form__search--person"
+                type="text"
+                id="person"
+                name="person"
+                placeholder="2 Adults — 0 Children — 1 Room"
+            /></label>
+
+            <button class="form__search form__search--submit">Search</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="apps">
+        <svg class="apps__google">
+          <use href="./images/sprite.svg#google" />
+        </svg>
+        <svg class="apps__apple">
+          <use href="./images/sprite.svg#apple" />
+        </svg>
+      </div>
+    </div>
+
+    <p class="offer-text">What do we offer</p>
+    <svg class="stroke">
+      <use href="./images/sprite.svg#stroke" />
+    </svg>
+
+    <div class="offer">
+      <div class="offer__icons">
+        <svg class="offer__icons--icon">
+          <use href="./images/sprite.svg#headset" />
+        </svg>
+        <p class="offer__description">Support 24/7</p>
+      </div>
+      <div class="offer__icons">
+        <svg class="offer__icons--icon">
+          <use href="./images/sprite.svg#forum" />
+        </svg>
+        <p class="offer__description">Communicate directly</p>
+      </div>
+      <div class="offer__icons">
+        <svg class="offer__icons--icon">
+          <use href="./images/sprite.svg#devices" />
+        </svg>
+        <p class="offer__description">Book online</p>
+      </div>
+      <div class="offer__icons">
+        <svg class="offer__icons--icon">
+          <use href="./images/sprite.svg#thump-up" />
+        </svg>
+        <p class="offer__description">Real guest reviews</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer__description">
+        <div class="footer__column">
+          <p class="footer__column--text">About</p>
+          <p class="footer__column--text">How Triphouse works</p>
+          <p class="footer__column--text">Careers</p>
+          <p class="footer__column--text">Privacy</p>
+          <p class="footer__column--text">Terms</p>
+        </div>
+        <div class="footer__column">
+          <p class="footer__column--text">Property types</p>
+          <p class="footer__column--text">Guest houses</p>
+          <p class="footer__column--text">Hotels</p>
+          <p class="footer__column--text">Apartments</p>
+          <p class="footer__column--text">Villas</p>
+          <p class="footer__column--text">Holiday homes</p>
+          <p class="footer__column--text">Hostels</p>
+        </div>
+        <div class="footer__column">
+          <p class="footer__column--text">Support</p>
+          <p class="footer__column--text">Contact Customer Service</p>
+          <p class="footer__column--text">FAQ</p>
+        </div>
+      </div>
+      <p class="footer__colontitul">
+        © 2020 Triphouse, Inc. All rights reserved
+      </p>
+    </div>
+  </body>
+</html>
