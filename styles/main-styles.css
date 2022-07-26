@@ -5,19 +5,26 @@
   margin: 0;
 }
 
-.background-image {
+.main__wrapper {
   background: url("../images/back/castelmezzano-1979546 1.svg") no-repeat;
   background-size: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   height: 900px;
   margin: 0 auto;
-  padding: 51px 142px 0 142px;
+  width: 1440px;
+  /*padding: 51px 142px 0 142px;*/
 }
+.main{
+  margin: 0 auto;
+  padding-top: 50px;
+  max-width: 1232px;
 
+
+}
 .header {
   display: flex;
   height: 46px;
-  width: 1232px;
+  max-width: 1232px;
   justify-content: space-between;
   align-items: center;
 }
@@ -111,10 +118,16 @@
   border: 0;
   border-radius: 5px;
   background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+
 }
 
 .form__search--city {
   width: 467px;
+  padding: 16px 16px 16px 24px;
 }
 
 .form__search--date {
@@ -125,26 +138,18 @@
 
 .form__search--person {
   width: 314px;
+  text-align: center;
 }
 
 .form__search--submit {
   display: block;
   background-color: #10367c;
   width: 192px;
-  text-align: center;
+  /*text-align: center;*/
   color: #ffffff;
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
   font-size: 24px;
 }
 
-::placeholder {
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: #000000;
-  padding-left: 24px;
-}
 
 .apps {
   display: flex;
@@ -162,25 +167,31 @@
   height: 40px;
   width: 120px;
 }
+.offer{
+  width: 1440px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin:0 auto;
+}
+.offer__text {
 
-.offer-text {
-  text-align: center;
   font-size: 40px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   margin-top: 120px;
   margin-bottom: 20px;
+
 }
 
 .stroke {
-  display: block;
   margin: auto auto 80px;
   height: 6px;
-  width: 150px;
+  width: 100px;
 }
 
-.offer {
-  max-width: 1440px;
+.advantages {
+  width: 1440px;
   display: flex;
   margin: auto auto 140px;
   padding-left: 104px;
@@ -188,38 +199,44 @@
   gap: 8px;
 }
 
-.offer__icons {
+.advantages__icons {
   height: 160px;
   width: 300px;
   margin: auto;
   text-align: center;
 }
 
-.offer__icons--icon {
+.advantages__icons--icon {
   margin-bottom: 42px;
   height: 100px;
   width: 100px;
 }
 
-.offer__description {
+.advantages__description {
   font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 400;
   margin-top: 0;
 }
 
-.footer {
-  margin: 0 auto;
-  padding: 120px 104px;
-  height: 630px;
+.footer__wrapper{
   background-color: #10367c;
+  margin:auto;
+  width: 1440px;
+
+}
+.footer {
+  padding: 120px 104px;
+  max-width: 1440px;
+  margin: 0 auto;
+
 }
 
 .footer__description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1232px;
+  max-width: 1232px;
   margin: 0 auto 44px 0;
 }
 
