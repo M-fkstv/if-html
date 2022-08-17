@@ -8,15 +8,15 @@
   </head>
   <body>
     <div class="main__wrapper">
-      <div class="main">
-        <div class="header col-xs-6">
+      <div class="main col-lg-12 col-xs-6">
+        <header class="header">
           <svg class="header__logo">
             <use href="./images/sprite.svg#logo" />
           </svg>
           <div class="header__container">
             <div class="header__text">
-              <p class="header__text--name lined">Stays</p>
-              <p class="header__text--name lined">Attractions</p>
+              <p class="header__text--name">Stays</p>
+              <p class="header__text--name">Attractions</p>
               <svg class="header__images--menu">
                 <use href="./images/sprite.svg#burger-menu" />
               </svg>
@@ -31,15 +31,15 @@
               </svg>
             </div>
           </div>
-        </div>
+        </header>
 
         <h1 class="h1-text">
           Discover stays <br />
           to live, work or just relax
         </h1>
 
-        <form class="form col-xs-6">
-          <div class="form__search ">
+        <form class="form col-md-12">
+          <div class="form__search col-md-4">
             <label class="city__label label" for="city"
               >Your destination hotel name</label
             >
@@ -48,10 +48,9 @@
               type="text"
               id="city"
               name="city"
-              value="New-York"
             />
           </div>
-          <div class="input-date ">
+          <div class="input-date col-md-4">
             <label class="date-in__label label" for="date-in">Check in</label>
             <input
               class="form__search form__search--date--in"
@@ -62,7 +61,9 @@
             <div class="input-splitter">
               <span> &mdash; </span>
             </div>
-            <label class="date-out__label label" for="date-out">Check out</label>
+            <label class="date-out__label label" for="date-out"
+              >Check out</label
+            >
             <input
               class="form__search form__search--date--out"
               type="text"
@@ -70,42 +71,43 @@
               value="Sat 19 Sept"
             />
           </div>
-          <div class="input-person col-xs-6">
-
-              <input
-                class="form__search form__search--person"
-                type="text"
-                id="adults"
-                name="person"
-                value="2"
+          <div class="input-person col-md-4 col-xs-6">
+            <input
+              class="form__search form__search--person"
+              type="text"
+              id="adults"
+              name="adults"
+              value="2"
             />
             <label class="adults-label person-label" for="adults">Adults</label>
             <div class="input-splitter">
               <span> &mdash; </span>
             </div>
 
-              <input
-                class="form__search form__search--person border"
-                type="text"
-                id="children"
-                name="person"
-                value="0"
+            <input
+              class="form__search form__search--person border"
+              type="text"
+              id="children"
+              name="children"
+              value="0"
             />
-            <label class="children-label person-label" for="children">Children</label>
+            <label class="children-label person-label" for="children"
+              >Children</label
+            >
             <div class="input-splitter">
               <span> &mdash; </span>
             </div>
 
-              <input
-                class="form__search form__search--person"
-                type="text"
-                id="room"
-                name="person"
-                value="1"
+            <input
+              class="form__search form__search--person"
+              type="text"
+              id="room"
+              name="room"
+              value="1"
             />
             <label class="room-label person-label" for="room">Rooms</label>
           </div>
-          <button class="form__search form__search--submit col-xs-6">
+          <button class="form__search col-md-4 form__search--submit col-xs-6">
             Search
           </button>
         </form>
@@ -120,7 +122,7 @@
         </div>
       </div>
     </div>
-    <div class="offer col-xs-6">
+    <section class="offer col-xs-6">
       <h2 class="h2-text">What do we offer</h2>
 
       <div class="advantages col-lg-12">
@@ -157,12 +159,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="homes">
+    <section class="homes">
       <h2 class="h2-text">Homes guests loves</h2>
-      <div class="homes__examples col-lg-12 col-xs-6">
-        <div class="homes__examples__icons col-lg-3 col-xs-3">
+      <div class="homes__examples col-lg-12 col-md-12 col-xs-6">
+        <div class="homes__examples__icons col-md-3 col-xs-3">
           <img
             class="homes__examples__icon"
             src="./images/content/Hotel%20Leopold.png"
@@ -173,9 +175,9 @@
             <p class="homes__description--text">Saint Petersburg, Russia</p>
           </div>
         </div>
-        <div class="homes__examples__icons col-lg-3 col-xs-3">
+        <div class="homes__examples__icons col-md-3 col-xs-3">
           <img
-            class="homes__examples__icon "
+            class="homes__examples__icon"
             src="./images/content/Appartmen%20Sunshine.png"
             alt="Apartment Sunshine"
           />
@@ -186,7 +188,7 @@
             </p>
           </div>
         </div>
-        <div class="homes__examples__icons col-lg-3 col-xs-3">
+        <div class="homes__examples__icons col-md-3 col-xs-3">
           <img
             class="homes__examples__icon"
             src="./images/content/Villa%20Kunerad.png"
@@ -197,7 +199,7 @@
             <p class="homes__description--text">Vysokie Tatry, Slowakia</p>
           </div>
         </div>
-        <div class="homes__examples__icons col-xs-3">
+        <div class="homes__examples__icons col-md-3 col-xs-3">
           <img
             class="homes__examples__icon"
             src="./images/content/Hostel%20Friendship.png"
@@ -214,10 +216,113 @@
           </svg>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="destinations col-lg-12 col-md-12">
+      <h2 class="h2-text">The best destinations</h2>
+      <div class="destinations__filter col-md-6 col-xs-6">
+        <button class="destinations__filter-button col-xs-2 button--regions">
+          Regions
+        </button>
+        <button class="destinations__filter-button col-xs-2 button--cities">
+          Cities
+        </button>
+        <button class="destinations__filter-button col-xs-2 button--places">
+          Places <span class="hidden-text">of interest</span>
+        </button>
+      </div>
+      <div class="destinations__example col-xs-6">
+        <figure class="destinations__example--icon col-md-3 col-xs-3">
+          <img
+            class="dest-icon"
+            src="./images/content/Maldives.png"
+            alt="Maldives"
+          />
+          <div class="bg-hover">
+            <button class="hover-button" type="button">
+              <a href="#">Book now</a>
+            </button>
+          </div>
+          <figcaption>Maldives</figcaption>
+        </figure>
+
+        <figure class="destinations__example--icon col-md-3 col-xs-3">
+          <img class="dest-icon" src="./images/content/Spain.png" alt="Spain" />
+          <div class="bg-hover">
+            <button class="hover-button" type="button">
+              <a href="#">Book now</a>
+            </button>
+          </div>
+          <figcaption>Spain</figcaption>
+        </figure>
+
+        <figure class="destinations__example--icon col-md-3 col-xs-3">
+          <img
+            class="dest-icon"
+            src="./images/content/Norway.png"
+            alt="Norway"
+          />
+          <div class="bg-hover">
+            <button class="hover-button" type="button">
+              <a href="#">Book now</a>
+            </button>
+          </div>
+          <figcaption>Norway</figcaption>
+        </figure>
+
+        <figure class="destinations__example--icon col-md-3 col-xs-3">
+          <img
+            class="dest-icon"
+            src="./images/content/Island.png"
+            alt="Island"
+          />
+          <div class="bg-hover">
+            <button class="hover-button" type="button">
+              <a href="#">Book now</a>
+            </button>
+          </div>
+          <figcaption>Island</figcaption>
+        </figure>
+
+        <button class="destinations__examples--arr">
+          <svg class="arr-img">
+            <use href="./images/sprite.svg#arrow" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="sign-up col-md-10 col-xs-6">
+      <div class="desktop__sign-up col-lg-12">
+        <div class="user__icon">
+          <svg class="user__icon--logo">
+            <use href="./images/sprite.svg#User" />
+          </svg>
+        </div>
+        <div class="signature">
+          <h5>Sign up and get 20% off your first booking</h5>
+          <button class="sing-up__button">Sign up</button>
+        </div>
+        <svg class="user__icon--close">
+          <use href="./images/sprite.svg#close" />
+        </svg>
+      </div>
+      <div class="mobile__sign-up">
+        <svg class="user__icon--close">
+          <use href="./images/sprite.svg#close" />
+        </svg>
+        <div class="mobile__sign-up--logo">
+          <svg class="sign-up--logo">
+            <use href="./images/sprite.svg#mobile__sign-up--logo" />
+          </svg>
+        </div>
+        <h5>Sign up in the app and get 20% off your first booking</h5>
+        <p class="mobile__install">Install</p>
+      </div>
+    </section>
 
     <div class="footer__wrapper">
-      <div class="footer">
+      <footer class="footer">
         <svg class="footer__logo col-xs-2">
           <use href="./images/sprite.svg#mobile-footer-logo" />
         </svg>
@@ -253,7 +358,7 @@
         <p class="footer__colontitul">
           © 2020 Triphouse, Inc. All rights reserved
         </p>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
