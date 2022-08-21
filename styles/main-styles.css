@@ -313,7 +313,7 @@ html {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  margin: 0 auto;
+  margin: 0 auto 110px;
   color: var(--main-text);
 }
 .h2-text:hover:before {
@@ -341,7 +341,7 @@ html {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 100px auto 120px;
+  margin: 0 auto 110px;
 }
 
 .advantages__icons {
@@ -375,10 +375,10 @@ html {
 .homes__examples {
   position: relative;
   max-width: 1232px;
-  margin: 106px auto 0;
+  gap: 16px;
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  margin: 106px auto 0;
 }
 
 .homes__examples--arr {
@@ -483,6 +483,7 @@ html {
 .destinations__example--icon {
   position: relative;
 }
+
 figcaption {
   padding-top: 18px;
   color: var(--general-blue);
@@ -543,11 +544,15 @@ figcaption {
 }
 
 /*<<<<<<<SIGN-UP SECTION>>>>>>>>*/
-
+.sign-up__reviews {
+  display: flex;
+  flex-direction: column;
+}
 .desktop__sign-up {
   display: flex;
 }
 .sign-up {
+  order: 1;
   height: 200px;
   max-width: 1232px;
   margin: 0 auto;
@@ -605,6 +610,137 @@ h5 {
 }
 .mobile__sign-up {
   display: none;
+}
+
+/*<<<<<<<<<REVIEWS>>>>>>>>>>*/
+.reviews {
+  order: 2;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin: 0 auto;
+  max-width: 1232px;
+}
+.reviews__wrapper {
+  display: flex;
+  align-content: stretch;
+  gap: 16px;
+  position: relative;
+}
+.reviews__example {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  background-color: var(--bg-color);
+  margin-bottom: -4px;
+}
+
+.reviews__photo--photo {
+  width: 100%;
+}
+.reviews__arr {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--bg-color);
+  background-color: #f3f3f4;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  top: calc(400px / 2);
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+.price {
+  position: absolute;
+  top: calc(400px - 48px);
+  width: 100%;
+  height: 48px;
+  padding-left: 24px;
+  padding-top: 16px;
+  background-color: rgba(56, 56, 56, 0.7);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--general-white);
+}
+
+.reviews__review {
+  padding: 24px;
+  height: max-content;
+}
+.reviews__rating {
+  display: flex;
+  justify-content: space-between;
+}
+.reviews--container--place,
+.reviews--container--grade {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.reviews--container--grade {
+  align-items: flex-end;
+}
+.resort {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--general-blue);
+  /*margin-bottom: 16px;*/
+}
+.resort__country {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--general-blue);
+}
+.resort__rating {
+  width: 48px;
+  height: 32px;
+  background-color: var(--general-blue);
+  text-align: center;
+  color: var(--general-white);
+  border-radius: 5px;
+  padding-top: 8px;
+  margin-bottom: 8px;
+}
+.resort__views {
+  font-size: 14px;
+  font-weight: 400;
+  color: #bfbfbf;
+}
+
+.reviews__account {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin: 27px 0;
+}
+.reviews__account--logo {
+  height: 53px;
+  width: 53px;
+}
+.reviewer {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+.reviewer__name {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--main-text);
+}
+.reviewer__country {
+  font-size: 18px;
+  font-weight: 400;
+  color: #bfbfbf;
+}
+.reviews__text {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--main-text);
 }
 
 /*<<<<<<<FOOTER >>>>>>>*/
@@ -691,6 +827,8 @@ li {
   }
   .col-md-12 {
     width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   /*[class*="col-"]{*/
   /*  margin-right: 8px;*/
@@ -818,7 +956,7 @@ li {
     height: 30px;
     width: 30px;
     top: calc(50% - (80px + 24px) / 2);
-    left: 94%;
+    left: 92%;
     padding-top: 7px;
     padding-left: 8px;
   }
@@ -879,12 +1017,63 @@ li {
   }
 
   /*<<<<<<<SIGN-UP SECTION>>>>>>>>*/
-
   .desktop__sign-up {
     margin: 0 auto;
   }
   h5 {
     font-size: 22px;
+  }
+
+  /*<<<<<<<<<<<REVIEWS>>>>>>>>>>*/
+  .section {
+    padding-top: 40px;
+  }
+  .reviews__wrapper {
+    justify-content: space-evenly;
+    margin-top: 60px;
+  }
+  .price {
+    padding-left: 12px;
+    font-size: 16px;
+    top: calc(206px - 48px);
+  }
+  .reviews__review {
+    padding: 12px;
+  }
+  .reviews__rating {
+    height: 60px;
+  }
+
+  .resort,
+  .resort__country,
+  .resort__rating,
+  .resort__views {
+    font-size: 12px;
+  }
+  .resort__rating {
+    width: 40px;
+    height: 28px;
+  }
+  .reviews__account--logo {
+    width: 45px;
+  }
+  .reviewer__name,
+  .reviewer__country,
+  .reviews__text {
+    font-size: 15px;
+  }
+  .reviews__text {
+    height: 90px;
+    overflow: hidden;
+  }
+  .reviews__arr {
+    height: 30px;
+    width: 30px;
+    padding-top: 7px;
+    padding-left: 8px;
+    top: calc(206px / 2);
+    left: 95%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
   }
 
   /*<<<<<<<FOOTER>>>>>>>>*/
@@ -1207,8 +1396,8 @@ li {
   }
 
   .homes__examples--arr {
-    top: 25%;
-    left: calc(100% - 22px);
+    top: 35%;
+    left: 95%;
     height: 28px;
     width: 28px;
     transform: translateX(-50%);
@@ -1230,6 +1419,7 @@ li {
     height: 32px;
     background-color: var(--general-white);
     margin: 0 auto 24px;
+    padding: 0;
   }
 
   .destinations__filter-button {
@@ -1278,7 +1468,6 @@ li {
   .destinations__examples--arr {
     top: 35%;
     left: 100%;
-    transform: translate(-100%);
   }
   /*<<<<<<<<SIGN-UP SECTION>>>>>>>>>>>>>*/
   .desktop__sign-up {
@@ -1287,6 +1476,7 @@ li {
   .sign-up {
     background-color: var(--general-white);
     height: 106px;
+    order: 3;
   }
   .mobile__sign-up {
     display: flex;
@@ -1321,6 +1511,48 @@ li {
     font-size: 14px;
     font-weight: 500;
     color: var(--general-blue);
+  }
+
+  .section {
+    padding: 16px 0 36px;
+  }
+  .reviews__wrapper {
+    margin-top: 0;
+  }
+  .reviews {
+    background-color: var(--bg-color);
+  }
+  .reviews__example:nth-of-type(2) {
+    display: none;
+  }
+  .reviews__example:nth-of-type(3) {
+    display: none;
+  }
+  .reviews__arr {
+    display: none;
+  }
+  .price {
+    display: none;
+  }
+  .reviews__review {
+    padding: 0;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .reviews__rating {
+    height: 44px;
+  }
+  .reviews__account {
+    gap: 16px;
+    padding: 13px 0;
+  }
+  .resort__rating {
+    padding-top: 3px;
+  }
+  .resort,
+  .resort__country,
+  .resort__rating {
+    font-size: 15px;
   }
 
   /*<<<<<FOOTER>>>>>>*/
