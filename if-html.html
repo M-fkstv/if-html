@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/main-styles.css" />
   </head>
   <body>
+
     <div class="main__wrapper">
       <div class="main col-lg-12 col-xs-6">
         <header class="header">
@@ -39,53 +40,56 @@
           </h1>
 
           <form class="form col-md-12">
-            <div class="form__search col-md-4">
-              <label class="city__label label" for="city"
-                >Your destination hotel name</label
+            <div class="form__city col-md-4">
+              <label class="form__city--label label" for="city"
+                >Your destination or hotel name</label
               >
+              <svg class="magnifier">
+                <use href="./images/sprite.svg#magnifier"/>
+              </svg>
               <input
-                class="form__search form__search--city col-xs-6"
+                class="form__city--search input-style col-xs-6"
                 type="text"
                 id="city"
                 name="city"
               />
             </div>
-            <div class="input-date col-md-4">
-              <label class="date-in__label label" for="date-in">Check in</label>
+            <div class="form__date col-md-4">
+              <label class="form__date--in--label label" for="date-in">Check in</label>
               <input
-                class="form__search form__search--date--in"
+                class="form__date--in input-style"
                 type="text"
                 id="date-in"
                 value="Tue 15 Sept"
               />
-              <div class="input-splitter">
+              <div class="form--splitter">
                 <span> &mdash; </span>
               </div>
-              <label class="date-out__label label" for="date-out"
+              <label class="form__date-out--label label" for="date-out"
                 >Check out</label
               >
               <input
-                class="form__search form__search--date--out"
+                class="form__date--out input-style"
                 type="text"
                 id="date-out"
                 value="Sat 19 Sept"
               />
             </div>
-            <div class="input-person col-md-4 col-xs-6">
+            <div class="form__person col-md-4 col-xs-6">
               <input
-                class="form__search form__search--person"
+                class="form__person--search input-style"
                 type="text"
                 id="adults"
                 name="adults"
                 value="2"
               />
               <label class="adults-label person-label" for="adults">Adults</label>
-              <div class="input-splitter">
+              <div class="form--splitter">
                 <span> &mdash; </span>
               </div>
 
               <input
-                class="form__search form__search--person border"
+                class="form__person--search input-style"
                 type="text"
                 id="children"
                 name="children"
@@ -94,20 +98,20 @@
               <label class="children-label person-label" for="children"
                 >Children</label
               >
-              <div class="input-splitter">
+              <div class="form--splitter">
                 <span> &mdash; </span>
               </div>
 
               <input
-                class="form__search form__search--person"
+                class="form__person--search input-style"
                 type="text"
                 id="room"
                 name="room"
                 value="1"
               />
-              <label class="room-label person-label" for="room">Rooms</label>
+              <label class="room-label person-label" for="room">Room</label>
             </div>
-            <button class="form__search col-md-4 form__search--submit col-xs-6">
+            <button class="form__submit input-style col-md-4  col-xs-6">
               Search
             </button>
           </form>
@@ -165,43 +169,43 @@
     <section class="homes">
 
         <h2 class="h2-text">Homes guests loves</h2>
-        <div class="homes__examples col-lg-12 col-md-12 col-xs-6">
-        <div class="homes__examples__icons col-md-3 col-xs-3">
-          <img
-            class="homes__examples__icon"
-            src="./images/content/Hotel%20Leopold.png"
-            alt="Hotel Leopold"
-          />
-          <div class="homes__description">
-            <p class="homes__description--text">Hotel Leopold</p>
-            <p class="homes__description--text">Saint Petersburg, Russia</p>
+        <div class="homes__examples col-lg-12 col-xs-6 col-md-12">
+          <div class="homes__examples__icons col-lg-3 col-md-3 col-xs-3">
+            <img
+              class="homes__examples__icon "
+              src="./images/content/Hotel%20Leopold.png"
+              alt="Hotel Leopold"
+            />
+            <div class="homes__description">
+              <p class="homes__description--text">Hotel Leopold</p>
+              <p class="homes__description--text">Saint Petersburg, Russia</p>
+            </div>
           </div>
-        </div>
-        <div class="homes__examples__icons col-md-3 col-xs-3">
-          <img
-            class="homes__examples__icon"
-            src="./images/content/Appartmen%20Sunshine.png"
-            alt="Apartment Sunshine"
-          />
-          <div class="homes__description">
-            <p class="homes__description--text">Apartment Sunshine</p>
-            <p class="homes__description--text">
-              Santa Cruz de Tenerife, Spain
-            </p>
+          <div class="homes__examples__icons col-lg-3 col-md-3 col-xs-3">
+            <img
+              class="homes__examples__icon"
+              src="./images/content/Appartmen%20Sunshine.png"
+              alt="Apartment Sunshine"
+            />
+            <div class="homes__description">
+              <p class="homes__description--text">Apartment Sunshine</p>
+              <p class="homes__description--text">
+                Santa Cruz de Tenerife, Spain
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="homes__examples__icons col-md-3 col-xs-3">
-          <img
-            class="homes__examples__icon"
-            src="./images/content/Villa%20Kunerad.png"
-            alt="Villa Kunerad"
-          />
-          <div class="homes__description">
-            <p class="homes__description--text">Villa Kunerad</p>
-            <p class="homes__description--text">Vysokie Tatry, Slowakia</p>
+          <div class="homes__examples__icons col-lg-3 col-md-3 col-xs-3">
+            <img
+              class="homes__examples__icon"
+              src="./images/content/Villa%20Kunerad.png"
+              alt="Villa Kunerad"
+            />
+            <div class="homes__description">
+              <p class="homes__description--text">Villa Kunerad</p>
+              <p class="homes__description--text">Vysokie Tatry, Slowakia</p>
+            </div>
           </div>
-        </div>
-        <div class="homes__examples__icons col-md-3 col-xs-3">
+          <div class="homes__examples__icons col-lg-3 col-md-3 col-xs-3">
           <img
             class="homes__examples__icon"
             src="./images/content/Hostel%20Friendship.png"
@@ -212,11 +216,11 @@
             <p class="homes__description--text">Berlin, Germany</p>
           </div>
         </div>
-        <div class="homes__examples--arr">
-          <svg class="arr-img">
-            <use href="./images/sprite.svg#arrow" />
-          </svg>
-        </div>
+          <div class="homes__examples--arr">
+            <svg class="arr-img">
+              <use href="./images/sprite.svg#arrow" />
+            </svg>
+          </div>
       </div>
 
     </section>
@@ -235,7 +239,7 @@
         </button>
       </div>
       <div class="destinations__example">
-        <figure class="destinations__example--icon col-md-3 col-xs-3">
+        <figure class="destinations__example--icon col-lg-3 col-md-3 col-xs-3">
           <img
             class="dest-icon"
             src="./images/content/Maldives.png"
@@ -249,7 +253,7 @@
           <figcaption>Maldives</figcaption>
         </figure>
 
-        <figure class="destinations__example--icon col-md-3 col-xs-3">
+        <figure class="destinations__example--icon col-lg-3 col-md-3 col-xs-3">
           <img class="dest-icon" src="./images/content/Spain.png" alt="Spain" />
           <div class="bg-hover">
             <button class="hover-button" type="button">
@@ -259,7 +263,7 @@
           <figcaption>Spain</figcaption>
         </figure>
 
-        <figure class="destinations__example--icon col-md-3 col-xs-3">
+        <figure class="destinations__example--icon col-lg-3 col-md-3 col-xs-3">
           <img
             class="dest-icon"
             src="./images/content/Norway.png"
@@ -273,7 +277,7 @@
           <figcaption>Norway</figcaption>
         </figure>
 
-        <figure class="destinations__example--icon col-md-3 col-xs-3">
+        <figure class="destinations__example--icon col-lg-3 col-md-3 col-xs-3">
           <img
             class="dest-icon"
             src="./images/content/Island.png"
@@ -328,12 +332,19 @@
         <h2 class="h2-text">Guests reviews</h2>
         <div class="reviews__wrapper">
           <div class="reviews__example col-lg-4 col-md-3 col-xs-6">
+            <div class="reviews__example--img">
               <img
-                    class="reviews__photo--photo"
+                    class="reviews__img"
                     src="./images/content/Bali.png"
                     alt="Bali"
             />
-              <p class="price">From 250 USD</p>
+              <div class="price">
+                <p >From 250 USD</p>
+              </div>
+
+
+
+          </div>
 
 
             <div class="reviews__review">
@@ -350,7 +361,7 @@
               </div>
               <div class="reviews__account">
                 <svg class="reviews__account--logo">
-                  <use href="./images/sprite.svg#reviews__accont" />
+                  <use href="./images/sprite.svg#reviews__account" />
                 </svg>
                 <div class="reviewer">
                   <p class="reviewer__name">Hanna Ivanova</p>
@@ -366,12 +377,14 @@
             </div>
           </div>
           <div class="reviews__example col-lg-4 col-md-3 col-xs-6">
-            <img
-              class="reviews__photo--photo"
-              src="./images/content/Kink-kong-hostel.png"
-              alt="Bali"
-            />
-            <p class="price">From 40 USD</p>
+            <div class="reviews__example--img">
+              <img
+                class="reviews__img"
+                src="./images/content/Kink-kong-hostel.png"
+                alt="Kink-kong-hostel"
+              />
+              <p class="price">From 40 USD</p>
+            </div>
             <div class="reviews__review">
               <div class="reviews__rating">
                 <div class="reviews--container--place">
@@ -386,7 +399,7 @@
               </div>
               <div class="reviews__account">
                 <svg class="reviews__account--logo">
-                  <use href="./images/sprite.svg#reviews__accont" />
+                  <use href="./images/sprite.svg#reviews__account" />
                 </svg>
                 <div class="reviewer">
                   <p class="reviewer__name">Adam Smith</p>
@@ -402,12 +415,14 @@
             </div>
           </div>
           <div class="reviews__example col-lg-4 col-md-3 col-xs-6">
-            <img
-              class="reviews__photo--photo"
-              src="./images/content/Rococo.png"
-              alt="Bali"
-            />
-            <p class="price">From 100 USD</p>
+            <div class="reviews__example--img">
+              <img
+                class="reviews__img"
+                src="./images/content/Rococo.png"
+                alt="Rococo"
+              />
+              <p class="price">From 100 USD</p>
+            </div>
             <div class="reviews__review">
               <div class="reviews__rating">
                 <div class="reviews--container--place">
@@ -422,7 +437,7 @@
               </div>
               <div class="reviews__account">
                 <svg class="reviews__account--logo">
-                  <use href="./images/sprite.svg#reviews__accont" />
+                  <use href="./images/sprite.svg#reviews__account" />
                 </svg>
                 <div class="reviewer">
                   <p class="reviewer__name">Anika Messer</p>
@@ -447,7 +462,7 @@
       </section>
     </section>
     <div class="footer__wrapper">
-      <footer class="footer">
+      <footer class="footer col-lg-12">
         <svg class="footer__logo col-xs-2">
           <use href="./images/sprite.svg#mobile-footer-logo" />
         </svg>

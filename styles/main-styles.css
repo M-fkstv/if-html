@@ -40,6 +40,8 @@
 }
 .col-lg-12 {
   width: calc(100% / 14 * 12);
+  margin-right: 8px;
+  margin-left: 8px;
 }
 .col-lg-13 {
   width: calc(100% / 14 * 13);
@@ -49,8 +51,6 @@
 }
 [class*="col-"] {
   /*gap: 16px;*/
-  /*margin-right: 8px;*/
-  /*margin-left: 8px;*/
 }
 html {
   font-family: Roboto, sans-serif;
@@ -73,8 +73,8 @@ html {
 }
 
 .main__wrapper {
-  background: url("../images/back/castelmezzano-1979546 1.svg") no-repeat;
-  background-size: 100%;
+  background: url("../images/back/castelmezzano-1979546 1.svg") no-repeat, fixed;
+  background-size: cover;
   height: 900px;
   min-height: 100vh;
   margin: 0 auto;
@@ -174,51 +174,56 @@ html {
 .form {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1232px;
+  max-width: 1230px;
   height: 64px;
   padding: 0;
   border: 3px solid #f3f3f4;
   border-radius: 8px;
   background-color: var(--general-white);
 }
-.label {
-  font-size: 19px;
-  color: var(--general-white);
+.magnifier {
+  display: none;
+  height: 16px;
+  width: 16px;
 }
-.person-label {
-  font-size: 19px;
-  padding-left: 2px;
-}
-.form__search {
+
+.form__city {
   position: relative;
   display: flex;
-  width: 466px;
+  width: 37.85%;
   /*max-width: 1232px;*/
+  /*padding-left: 24px;*/
+}
+.input-style {
   border: 0;
   border-radius: 8px;
   font-weight: 400;
   font-size: 18px;
-  /*height: 59px;*/
+  height: 59px;
 }
 
-.form__search--city {
+.form__city--search {
+  position: relative;
   width: 100%;
-  padding-left: 24px;
 }
 
-.city__label {
+.label {
+  font-size: 18px;
+  color: var(--general-white);
+}
+.form__city--label {
   position: absolute;
   top: -50px;
   left: 20px;
 }
 
-.date-in__label {
+.form__date--in--label {
   position: absolute;
   top: -50px;
-  left: 30px;
+  left: 25px;
 }
 
-.date-in__label:after {
+.form__date--in--label:after {
   position: absolute;
   content: "";
   height: 1px;
@@ -228,54 +233,58 @@ html {
   margin-left: 10px;
 }
 
-.date-out__label {
+.form__date-out--label {
   position: absolute;
   top: -50px;
-  left: 130px;
+  left: 118px;
 }
 
-.input-date {
+.form__date {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 260px;
+  width: 21.12%;
   height: 64px;
   border: 3px solid var(--animation-color);
   border-radius: 8px;
   margin: -3px;
 }
 
-.form__search--date--in {
+.form__date--in {
   width: 100%;
   text-align: right;
 }
 
-.form__search--date--out {
+.form__date--out {
   width: 100%;
   /*height: 58px;*/
   text-align: left;
 }
 
-.input-person {
+.form__person {
   display: flex;
-  width: 320px;
+  width: 26%;
   justify-content: center;
   align-items: center;
   padding-right: 24px;
-  padding-left: 24px;
+  padding-left: 30px;
   text-align: center;
 }
+.person-label {
+  font-size: 19px;
+  padding-left: 2px;
+}
 
-.form__search--person {
+.form__person--search {
   width: 100%;
   text-align: center;
 }
 
-.form__search--submit {
+.form__submit {
   display: block;
   background-color: var(--general-blue);
-  width: 192px;
+  width: 16%;
   color: var(--general-white);
   font-size: 24px;
   height: 64px;
@@ -287,7 +296,7 @@ html {
   display: flex;
   width: 270px;
   justify-content: space-between;
-  margin: 120px auto 120px 481px;
+  margin: 120px auto;
 }
 
 .apps__google {
@@ -369,7 +378,7 @@ html {
   background-color: var(--bg-color);
   padding-top: 120px;
   padding-bottom: 120px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 .homes__examples {
@@ -379,6 +388,12 @@ html {
   display: flex;
   justify-content: space-between;
   margin: 106px auto 0;
+}
+.homes__examples__icons {
+  width: 100%;
+}
+.homes__examples__icon {
+  width: 100%;
 }
 
 .homes__examples--arr {
@@ -418,7 +433,7 @@ html {
   height: 120px;
 }
 .homes__description--text {
-  margin-top: 24px;
+  margin-top: 20px;
   font-size: 24px;
   font-weight: 400;
   color: var(--general-blue);
@@ -479,16 +494,22 @@ html {
   margin: 0 auto;
   position: relative;
   justify-content: space-between;
+
+  gap: 16px;
 }
 .destinations__example--icon {
   position: relative;
+  width: 100%;
 }
-
+.dest-icon {
+  width: 100%;
+}
 figcaption {
   padding-top: 18px;
   color: var(--general-blue);
   font-weight: 400;
   font-size: 24px;
+  width: 100%;
 }
 .bg-hover {
   position: absolute;
@@ -567,7 +588,7 @@ figcaption {
   border: 1px solid var(--general-white);
   border-radius: 50%;
   background-color: var(--general-white);
-  margin: 45px 0 96px 28px;
+  margin: 45px 0 96px 20px;
 }
 .user__icon--logo {
   position: absolute;
@@ -636,8 +657,10 @@ h5 {
   background-color: var(--bg-color);
   margin-bottom: -4px;
 }
-
-.reviews__photo--photo {
+.reviews__example--img {
+  position: relative;
+}
+.reviews__img {
   width: 100%;
 }
 .reviews__arr {
@@ -657,7 +680,8 @@ h5 {
 }
 .price {
   position: absolute;
-  top: calc(400px - 48px);
+  top: 99%;
+  transform: translateY(-100%);
   width: 100%;
   height: 48px;
   padding-left: 24px;
@@ -741,6 +765,10 @@ h5 {
   font-size: 18px;
   font-weight: 400;
   color: var(--main-text);
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /*<<<<<<<FOOTER >>>>>>>*/
@@ -764,7 +792,7 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   max-width: 1232px;
-  margin: 0 auto 40px;
+  margin: 0 auto 60px;
 }
 
 .footer__column {
@@ -846,36 +874,42 @@ li {
 
   .form {
     height: 52px;
+    padding: 0;
   }
-  .input-person {
+  .form__person {
     background-color: var(--general-white);
     border-radius: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
-  .input-date {
+  .form__date {
     height: 52px;
   }
-  .form__search {
+  .input-style {
     font-size: 14px;
     padding: 0;
     height: 46px;
   }
-  .form__search--city {
+  .form__city--search {
     padding-left: 20px;
+  }
+  ::placeholder {
+    display: none;
   }
 
   .label {
     font-size: 16px;
   }
-  .city__label,
-  .date-in__label,
-  .date-out__label {
+  .form__city--label,
+  .form__date--in--label,
+  .form__date-out--label {
     top: -40px;
   }
 
   .person-label {
     font-size: 14px;
   }
-  .form__search--submit {
+  .form__submit {
     margin: 20px auto;
     height: 52px;
     font-size: 18px;
@@ -936,10 +970,6 @@ li {
     display: none;
   }
 
-  .homes__examples__icon {
-    width: 100%;
-  }
-
   .homes__description {
     height: 80px;
   }
@@ -994,7 +1024,7 @@ li {
     padding-top: 7px;
     padding-left: 8px;
     top: calc(100% / 2 - 38px);
-    left: 94%;
+    left: 95%;
     transform: translateX(-50%) rotate(0deg);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
   }
@@ -1005,11 +1035,11 @@ li {
 
   .button--regions,
   .button--cities {
-    width: 25%;
+    width: 100%;
   }
 
   .button--places {
-    width: 50%;
+    width: 100%;
   }
   .destinations__filter-button {
     font-size: 18px;
@@ -1035,7 +1065,6 @@ li {
   .price {
     padding-left: 12px;
     font-size: 16px;
-    top: calc(206px - 48px);
   }
   .reviews__review {
     padding: 12px;
@@ -1064,7 +1093,8 @@ li {
   }
   .reviews__text {
     height: 90px;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    -webkit-line-clamp: 5;
   }
   .reviews__arr {
     height: 30px;
@@ -1187,8 +1217,13 @@ li {
     padding: 8px;
     background-color: #f5bd41;
   }
-
-  .form__search {
+  .magnifier {
+    display: block;
+    position: absolute;
+    left: 12px;
+    z-index: 1;
+  }
+  .form__city {
     position: relative;
     height: 48px;
     align-items: center;
@@ -1197,16 +1232,17 @@ li {
     border-radius: 4px;
   }
 
-  .form__search--city {
+  .form__city--search {
     margin: 0;
     padding-left: 8px;
   }
 
-  .form__search--person,
-  .form__search--date--in,
-  .form__search--date--out {
+  .form__person--search,
+  .form__date--in,
+  .form__date--out {
     padding-top: 20px;
     padding-left: 8px;
+    text-align: left;
   }
 
   .label {
@@ -1219,31 +1255,32 @@ li {
     font-size: 12px;
   }
 
-  .city__label {
+  .form__city--label {
     top: 30%;
-    left: 30%;
-    font-size: 16px;
+    left: 12%;
+    font-size: 15px;
+    font-weight: 500;
   }
 
-  .date-out__label {
+  .form__date-out--label {
     top: 10%;
-    left: 55%;
+    left: 54%;
   }
 
-  .date-in__label {
+  .form__date--in--label {
     top: 10%;
-    left: 2%;
+    left: 3%;
   }
 
-  .mdash {
+  /*.mdash {*/
+  /*  display: none;*/
+  /*}*/
+
+  .form--splitter {
     display: none;
   }
 
-  .input-splitter {
-    display: none;
-  }
-
-  .input-date {
+  .form__date {
     margin: 8px 0;
     border: 0;
     gap: 8px;
@@ -1251,24 +1288,24 @@ li {
     height: 48px;
   }
 
-  .form__search--date--in {
+  .form__date--in {
     width: 50%;
     text-align: left;
     font-size: 15px;
     font-weight: 500;
   }
 
-  .form__search--date--out {
+  .form__date--out {
     width: 50%;
     text-align: left;
     font-size: 15px;
   }
 
-  .form__search--date--out {
+  .form__date--out {
     width: 50%;
   }
 
-  .input-person {
+  .form__person {
     padding: 0;
     position: relative;
     margin: 0 auto;
@@ -1296,9 +1333,9 @@ li {
     left: 69%;
   }
 
-  .form__search--submit {
+  .form__submit {
     height: 48px;
-    margin: 6px 0 0;
+    margin: 10px 0 0;
     font-size: 19px;
     text-align: center;
   }
@@ -1371,11 +1408,6 @@ li {
     display: none;
   }
 
-  .homes__examples__icon {
-    width: 156px;
-    height: 156px;
-  }
-
   .homes__description {
     font-size: 15px;
   }
@@ -1396,7 +1428,7 @@ li {
   }
 
   .homes__examples--arr {
-    top: 35%;
+    top: 27%;
     left: 95%;
     height: 28px;
     width: 28px;
@@ -1578,7 +1610,7 @@ li {
   }
 
   .footer__description {
-    /*width: 225px;*/
+    width: 225px;
     margin: 0 auto 32px;
   }
 
